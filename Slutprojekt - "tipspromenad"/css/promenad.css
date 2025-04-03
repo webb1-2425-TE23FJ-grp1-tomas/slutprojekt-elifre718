@@ -19,7 +19,6 @@ body{
     max-width: 1600px;
     border-radius: 10px;
 }
-
 .boxes{
     border-color: grey;
     border: 5px;
@@ -28,6 +27,11 @@ body{
     margin: 10px;
     margin-top: 10px;
     border-radius: 10px;
+}
+.content-boxes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 /*mobil*/
@@ -125,14 +129,17 @@ body{
 }
 button{
     width: 100%;
-    
 }
 #content{
     background-color: white;
     grid-area: item-3;
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-intro{
+#intro{
+    display: flex;
+    justify-content: center;
     background-color: white;
 }
 #about_us{
