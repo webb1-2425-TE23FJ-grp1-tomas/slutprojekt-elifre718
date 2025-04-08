@@ -20,6 +20,7 @@ body{
     border-radius: 10px;
 }
 .boxes{
+    display: grid;
     border-color: grey;
     border: 5px;
     height: auto;
@@ -29,9 +30,27 @@ body{
     border-radius: 10px;
 }
 .content-boxes{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+    display: grid;
+    justify-content: left;
+    padding: 20px;
+}
+.question-boxes{
+    display: grid;
+    justify-items: center;
+    background-color: lightgray;
+    margin: 10px;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.responsive{
+    margin: 10px;
+    height: auto;
+    max-width: 100%;
+    /*width: 100%*/
+}
+img{
+    border-radius: 10px;
 }
 
 /*mobil*/
@@ -46,6 +65,17 @@ body{
         "item-4"
         ;
     }
+    .content-boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "q1"
+        "q2"
+        "q3"
+        "q4"
+        "q5"
+        "q6";
+    }
 }
 
 /*platta*/
@@ -59,6 +89,17 @@ body{
         "item-2 item-3 item-3"
         "item-4 item-4 item-4"
         ;
+    }
+    .content-boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "q1"
+        "q2"
+        "q3"
+        "q4"
+        "q5"
+        "q6";
     }
 }
 
@@ -75,6 +116,17 @@ body{
         "item-4 item-4 item-4 item-4"
         ;
     }
+    .content-boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "q1"
+        "q2"
+        "q3"
+        "q4"
+        "q5"
+        "q6";
+    }
 }
 
 /*större desktop*/
@@ -90,6 +142,17 @@ body{
         "item-4 item-4 item-4 item-4"
         ;
     }
+    .content-boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "q1"
+        "q2"
+        "q3"
+        "q4"
+        "q5"
+        "q6";
+    }
 }
 
 /*stor desktop*/
@@ -104,6 +167,17 @@ body{
         "item-2 item-3 item-3 item-3"
         "item-4 item-4 item-4 item-4"
         ;
+    }
+    .content-boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "q1"
+        "q2"
+        "q3"
+        "q4"
+        "q5"
+        "q6";
     }
 }
 
@@ -133,7 +207,7 @@ button{
 #content{
     background-color: white;
     grid-area: item-3;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -146,4 +220,29 @@ button{
     color: white;
     background-color: green;
     grid-area: item-4;
+}
+
+#box1{
+    background-color: lightgray;
+    grid-area: q1;
+}
+#box2{
+    background-color: lightgray;
+    grid-area: q2;
+}
+#box3{
+    background-color: lightgray;
+    grid-area: q3;
+}
+#box4{
+    background-color: lightgray;
+    grid-area: q4;
+}
+#box5{
+    background-color: lightgray;
+    grid-area: q5;
+}
+#box6{
+    background-color: lightgray;
+    grid-area: q6;
 }
