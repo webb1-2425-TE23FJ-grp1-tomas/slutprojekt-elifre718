@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    display: block;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+.container{
+    display: grid;
+    grid-area: auto;
+    align-items: top;
+    background-color: white;
+    justify-content: center;
+    max-width: 1600px;
+    border-radius: 10px;
+}
+
+.boxes{
+    border-color: grey;
+    border: 5px;
+    height: auto;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/*mobil*/
+@media screen and (min-width: 320px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(0.5fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "item-1"
+        "item-2"
+        "item-4"
+        ;
+    }
+}
+
+/*platta*/
+@media screen and (min-width: 600px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(0.5fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-1"
+        "item-2 item-4 item-4"
+        "item-2 item-4 item-4"
+        ;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width: 900px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-1 item-1"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        ;
+    }
+}
+
+/*större desktop*/
+@media screen and (min-width: 1200px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-1 item-1"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        ;
+    }
+}
+
+/*stor desktop*/
+@media screen and (min-width: 1500px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-1 item-1"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        "item-2 item-4 item-4 item-4"
+        ;
+    }
+}
+
+#banner{
+    display: flex;
+    color: white;
+    font-size: medium;
+    text-shadow: 10px;
+    background-color: green;
+    grid-area: item-1;
+    align-items: center;
+}
+#menu{
+    background-color: lightgrey;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    font-style:normal;
+    font-weight: bold;
+    grid-area: item-2;
+    padding-bottom: 10px;
+}
+button{
+    width: 100%;
+    
+}
+intro{
+    background-color: white;
+}
+#about_us{
+    color: white;
+    background-color: green;
+    grid-area: item-4;
+}
