@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
     <title>Skeppsrundans tipspromenad</title>
+    <link rel="stylesheet" href="lightbox-js/simple-lightbox.js">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <section class="container">
         <div class="boxes" id="banner">
-            <img src="images/pirate-ship-icon.png" alt="pirate-ship-icon">
+            <div class="gallery">
+                <a href="images/pirate-ship-icon.png">
+                <img src="images/pirate-ship-icon.png" alt="pirate-ship-icon">
+                </a>
+            </div>
             <h3>SKEPPSRUNDANS TIPSPROMENAD</h3>
         </div>
-        <div class="boxes" id="menu">
+        <asside class="boxes" id="menu">
             <h3>MENY</h3>
             <button class="Hem">
                 <a href="index.html">Home</a>
@@ -23,12 +28,15 @@
             <button class="Om oss">
                 <a href="om-oss.html">Om oss</a>
             </button>
-            
-        </div>
+        </asside>
         <div class="boxes" id="content">
             <div class="content-boxes" id="intro"><h3>Välkommen till den mest spännande tipspromenaden: Skeppsrundan!</h3>
                 <p>Till skillnad från andra tipspromenader är denna sida inte avsädd för ett frågequiz utan mer av en guide till de ställen du besöker under den här "promenaden"</p><br>
-                <img src="images/introbild-vallaskogen.png" alt="introbild">
+                <div class="gallery">
+                    <a href="images/q1-vallaskogen.png">
+                    <img src="images/introbild-vallaskogen.png" alt="introbild">
+                    </a>
+                </div>
                 <h3>Hur startar jag promenaden?</h3>
                 <p>För att gå vidare till självaste promenaden klickar du på knappen "Starta Promenaden" i menyrutan</p>
             </div>
@@ -39,5 +47,7 @@
             <p>Sidan är avsedd för att guida människor till att få veta mer allmän fakta om Linköping</p>
         </div>
     </section>
+    <script src="lightbox-js/simple-lightbox.js" defer></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
