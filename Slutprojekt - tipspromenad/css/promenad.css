@@ -65,6 +65,7 @@ img{
 a{
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
 
@@ -175,6 +176,7 @@ a{
         font-size: 20px;
     }
     #menu-banner{
+        width: 260px;
         top: 0px;
         position: sticky;
     }
@@ -205,13 +207,14 @@ a{
         "q6";
     }
     #menu-banner{
+        width: 260px;
         top: 0px;
         position: sticky;
     }
 }
 
 /*stor desktop*/
-@media screen and (min-width: 1500px){
+@media screen and (min-width: 2500px){
     .container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(0.5fr 1fr 1fr 1fr 1fr);
@@ -235,6 +238,7 @@ a{
         "q6";
     }
     #menu-banner{
+        width: 300px;
         top: 0px;
         position: sticky;
     }
@@ -267,6 +271,7 @@ a{
 }
 .button{
     display: block;
+    color: black;
     border-radius: 5px;
     background-color: white;
     width: 100%;
