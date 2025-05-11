@@ -30,7 +30,7 @@ body{
 }
 .content-boxes{
     display: grid;
-    justify-content: left;
+    justify-content: center;
     padding: 20px;
 }
 .question-boxes{
