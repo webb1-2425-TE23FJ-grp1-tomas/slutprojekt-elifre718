@@ -15,12 +15,8 @@ body{
     grid-area: auto;
     background-color: white;
     justify-content: center;
-    max-width: 1600px;
+    max-width: 1120px;
     border-radius: 10px;
-}
-.gallery{
-    display: grid;
-    justify-content: center;
 }
 .responsive{
     margin: 10px;
