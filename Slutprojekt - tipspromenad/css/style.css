@@ -27,7 +27,6 @@ body{
 }
 .boxes{
     display: grid;
-    border-color: grey;
     border: 5px;
     height: auto;
     padding: 20px;
