@@ -250,6 +250,7 @@ a{
     background-color: green;
     grid-area: item-1;
     align-items: center;
+    justify-content: center;
 }
 #menu{
     background-color: lightgrey;
