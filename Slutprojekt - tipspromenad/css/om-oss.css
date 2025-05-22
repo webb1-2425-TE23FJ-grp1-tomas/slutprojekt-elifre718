@@ -17,6 +17,9 @@ body{
     justify-content: center;
     max-width: 1120px;
     border-radius: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight:normal;
+    font-style: normal;
 }
 .boxes{
     border: 5px;
@@ -25,6 +28,7 @@ body{
     margin: 10px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 5px 5px gray;
 }
 a{
     display: flex;
@@ -131,7 +135,6 @@ a{
     grid-area: item-1;
     align-items: center;
     justify-content: center;
-    box-shadow: 5px 5px gray;
 }
 #menu{
     display: flex;
@@ -139,7 +142,6 @@ a{
     background-color: lightgrey;
     grid-area: item-2;
     padding-bottom: 10px;
-    box-shadow: 5px 5px gray;
 }
 #menu-banner{
     background-color: lightgrey;
@@ -151,7 +153,6 @@ a{
     padding: 10px;
     grid-area: item-2;
     height: 152.44px;
-    box-shadow: 5px 5px gray;
 }
 .button{
     display: block;
@@ -181,5 +182,4 @@ button{
     color: white;
     background-color: green;
     grid-area: item-4;
-    box-shadow: 5px 5px gray;
 }
